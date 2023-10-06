@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="filter-controls">
+        <div class="filter">
+            <input type="text" id="product-search" placeholder="Enter a keyword">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="filter">
+            <input type="number" id="min-price" placeholder="Min Price">
+            <input type="number" id="max-price" placeholder="Max Price">
+            <button id="apply-price-filter">Apply</button>
+        </div>
+        <div class="filter">
+            <input type="number" id="min-disc" placeholder="Min Disc">
+            <input type="number" id="max-disc" placeholder="Max Disc">
+            <button id="apply-disc-filter">Apply</button>
+        </div>
+        <div class="sort">
+            <div class="filter">
+                <select id="sort-by-price">
+                    <option value="none">Proce sort</option>
+                    <option value="low-to-high">Lowest to Highest</option>
+                    <option value="high-to-low">Highest to Lowest</option>
+                </select>
+            </div>
+            <div class="filter">
+                <select id="sort-by-disc">
+                    <option value="none">Disc sort</option>
+                    <option value="low-to-high">Lowest to Highest</option>
+                    <option value="high-to-low">Highest to Lowest</option>
+                </select>
+            </div>
+            <div class="filter gold">
+                <label for="gold-category-filter">GOLD</label>
+                <input type="checkbox" id="gold-category-filter">
+            </div>
+        </div>
+
+    </div>
+    <div class="product-list">
+        <!-- Product list goes here -->
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="products.js"></script>
+</body>
+
+</html>
