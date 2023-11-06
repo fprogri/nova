@@ -66,7 +66,7 @@ function fetchProducts() {
 
               // Customize the content of the product card using the product object properties
               productCard.innerHTML = `
-                <img src=${src}>
+                <img src=${src} loading="lazy">
                 <a href=${link} target="_blank" class="path">${product.title}</a>
                 <p>Ishte: ${product.variants[0].compare_at_price} Lek</p>
                 <p class="after-price">${product.variants[0].price} Lek</p>
